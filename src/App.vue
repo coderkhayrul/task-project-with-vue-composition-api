@@ -6,7 +6,7 @@ import TaskPage from "./pages/TasksPage.vue";
 
 <template>
   <Navbar />
-  <TaskPage />
+  <router-view />
   <Footer />
 </template>
 
