@@ -8,7 +8,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from) => {
-    console.log('Global beforeEach', to, from);
+    // console.log('Global beforeEach', to, from);
     if (to.meta.auth) {
         return {
             name: 'login',
