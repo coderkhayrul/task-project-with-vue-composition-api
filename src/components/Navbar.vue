@@ -19,19 +19,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <!-- <router-link :to="{ name: 'tasks' }" class="nav-link">
+            <router-link :to="{ name: 'tasks' }" class="nav-link">
               Tasks
-            </router-link> -->
-            <a
+            </router-link>
+            <!-- <a
               href="#"
               @click.prevent="$router.push('/tasks')"
               class="nav-link"
-            >
+            > 
               Tasks
-            </a>
+            </a> -->
           </li>
           <li class="nav-item">
-            <a href="summaries.html" class="nav-link">Summary</a>
+            <router-link :to="{ name: 'summary' }" class="nav-link">
+              Summary
+            </router-link>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -56,3 +58,9 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.nav-link.router-link-active {
+  color: rgba(0, 0, 0, 0.9);
+}
+</style>
